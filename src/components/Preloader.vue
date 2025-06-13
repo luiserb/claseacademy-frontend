@@ -21,7 +21,7 @@
             v-if="preloader"  
             class="modal-container"
         >
-            <h1 class="text-white text-h2 mb-8">
+            <h1 class="text-white text-h2 mb-8 text-center">
                 Clase Academy
             </h1>
 
