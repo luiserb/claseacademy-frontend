@@ -31,19 +31,19 @@
                 class="ma-3 text-center"
             >
                 <v-icon 
-                    class="icon_areas"
+                    class="icon_areas text-primary"
                 >
                     {{area.icon}}
                 </v-icon>
                 
                 <h3
-                    class="text-h6 mb-2"
+                    class="text-h6 mb-2 text-primary"
                 >
                     {{area.title}}
                 </h3>
 
                 <p
-                    class="text-body-2"
+                    class="text-body-2 text-surface"
                 >
                     {{area.description}}
                 </p>

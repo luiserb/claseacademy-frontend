@@ -45,7 +45,7 @@
 <template>
     <v-footer 
         class="text-center d-flex flex-column ga-2 py-4" 
-        color="background"
+        color="primary"
     >
         <v-row
             class="text-center my-4"
@@ -58,7 +58,7 @@
                 sm="3"
             >
                 <v-list
-                    bg-color="background"
+                    bg-color="primary"
                 >
                     <div
                         class="text-center"
@@ -70,7 +70,6 @@
                         v-for="(item, j) in link.links"
                         :key="j"
                         variant="plain"
-                        color="primary"
                     >
                         <v-list-item-subtitle
                             class="text-center"
@@ -85,7 +84,7 @@
         <Icons />
 
         <div class="my-6">
-        {{ new Date().getFullYear() }} — <strong>Clase Academy</strong>
+            {{ new Date().getFullYear() }} — <strong>Clase Academy</strong>
         </div>
 
     </v-footer>

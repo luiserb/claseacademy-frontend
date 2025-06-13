@@ -94,6 +94,7 @@
                                 elevation="19"
                                 :title="course.title"
                                 :text="course.description"
+                                color="primary"
                             >
                                 <v-btn
                                     class="mt-3 rounded-xl"

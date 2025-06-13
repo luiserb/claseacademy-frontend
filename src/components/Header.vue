@@ -1,5 +1,10 @@
 <script setup>
     import { ref, onMounted, onUnmounted } from 'vue';
+    import { useRoute } from 'vue-router';
+
+    const route = useRoute();
+    const currentPath = ref(route.path);
+
     import { useDisplay } from 'vuetify';
 
     const showMenu = ref(false);
@@ -38,27 +43,39 @@
     }
 
     onMounted(() => {
-        window.addEventListener('scroll', scrollHeader);
+        if(currentPath == "/" || currentPath == '/jobs'){
+            window.addEventListener('scroll', scrollHeader);
+        }else{
+            scroll.value = true;
+        }
     })
 
     onUnmounted(() => {
-        window.removeEventListener('scroll', scrollHeader);
+        if(currentPath == "/" || currentPath == "/jobs"){
+            window.removeEventListener('scroll', scrollHeader);
+        }else{
+            scroll.value = true;
+        }
     })
 </script>
 
 <template>
     <v-app-bar
         class="header"
+        :class="{'scroll_header': scroll}"
         :color="scroll ? 'background': 'transparent'"
         elevation="0"
     >
         <v-app-bar-nav-icon 
             v-if="display == 'xs'"
             variant="text" 
+            color="primary"
             @click="showMenu = !showMenu">
         </v-app-bar-nav-icon>
 
-       <v-toolbar-title>
+       <v-toolbar-title
+            :class="scroll ? 'text-primary': 'text-white'"
+       >
             Clase Academy
 
             <v-btn
@@ -80,7 +97,9 @@
 
         <v-btn
             v-if="display != 'xs'"
-            variant="tonal"
+            class="text-white"
+            variant="elevated"
+            color="primary"
         >
             Comenzar gratis
         </v-btn>
@@ -88,7 +107,7 @@
 
     <v-navigation-drawer
         v-if="display == 'xs'"
-        color="background"
+        color="primary"
         v-model="showMenu"
     >
         <v-list

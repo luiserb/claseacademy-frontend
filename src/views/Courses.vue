@@ -41,7 +41,7 @@
     <v-main>
         <v-container>
             <h1 
-                class="text-center text-h4"
+                class="text-center text-h4 text-primary"
             >
                 ¡Aprende con nosotros!
             </h1>

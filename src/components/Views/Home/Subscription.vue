@@ -44,13 +44,13 @@
     <section class="section">
         <div class="text-center">
             <h3
-                class="text-h4"
+                class="text-h4 text-primary"
             >
                 Planes de estudio
             </h3>
 
             <div
-                class="text-body-2 mt-3"
+                class="text-body-2 mt-3 text-surface"
             >
                 Además de las modalidades de clase, contamos con diferente forma de pagos para nuestros cursos, para que no te quedes fuera, pensamos siempre en ti.
             </div>
@@ -71,6 +71,7 @@
                 <v-card
                     class="pa-4 rounded-xl text-center mx-3"
                     elevation="20"
+                    color="primary"
                 >
                     <v-card-title>
                         {{subscription.title}}

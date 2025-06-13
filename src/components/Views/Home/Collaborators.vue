@@ -30,7 +30,7 @@
 
 <template>
     <section class="section">
-        <h3 class="text-h4 text-center">
+        <h3 class="text-h4 text-center text-primary">
             Alianzas
         </h3>
 

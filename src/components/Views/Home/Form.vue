@@ -15,20 +15,20 @@
             class="text-center"
         >
             <h3
-                class="text-h4"
+                class="text-h4 text-primary"
             >
                 Selecciona el curso que desea
             </h3>
 
             <div
-                class="text-body-2 mt-3"
+                class="text-body-2 mt-3 text-surface"
             >
                 Completa este formulario, uno de nuestros expertos se comunicará con ustedes y de forma facil le ayudará a seleccionar el curso que ayudará a continuar  su crecimiento.
             </div>
         </div>
         
         <v-row
-            class="pa-4 mt-2"
+            class="pa-4 mt-2 text-surface"
             justify="center"
         >
             <v-col
@@ -164,7 +164,7 @@
                 
                 <div class="text-center mt-4">
                     <v-btn
-                        variant="tonal"
+                        color="primary"
                     >
                         <span class="mr-2">Enviar</span>
                         <v-icon>mdi-send-variant</v-icon>

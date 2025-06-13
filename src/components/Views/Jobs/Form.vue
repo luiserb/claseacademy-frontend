@@ -138,10 +138,3 @@
         </v-row>
     </section>
 </template>
-
-
-<style lang="scss">
-    .section{
-        padding: 0;
-    }
-</style>

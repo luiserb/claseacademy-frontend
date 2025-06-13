@@ -52,19 +52,19 @@
                         <v-spacer></v-spacer>
 
                         <v-btn
-                            color="medium-emphasis"
+                            color="background"
                             icon="mdi-heart"
                             size="small"
                         ></v-btn>
 
                         <v-btn
-                            color="medium-emphasis"
+                            color="background"
                             icon="mdi-bookmark"
                             size="small"
                         ></v-btn>
 
                         <v-btn
-                            color="medium-emphasis"
+                            color="background"
                             icon="mdi-share-variant"
                             size="small"
                         ></v-btn>

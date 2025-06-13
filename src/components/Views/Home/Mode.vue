@@ -29,7 +29,7 @@
                 class="text-center"
             >
                 <h3
-                    class="text-h4"
+                    class="text-h4 text-primary"
                 >
                     Somos la academía pionera en educación basada en competencia en República Dominicana
                 </h3>
@@ -47,19 +47,19 @@
                 class="ma-3 text-center"
             >
                 <v-icon 
-                    class="icon_areas"
+                    class="icon_areas text-primary"
                 >
                     {{mode.icon}}
                 </v-icon>
                 
                 <h3
-                    class="text-h6 mb-2"
+                    class="text-h6 mb-2 text-primary"
                 >
                     {{mode.title}}
                 </h3>
 
                 <p
-                    class="text-body-2"
+                    class="text-body-2 text-surface"
                 >
                     {{mode.description}}
                 </p>

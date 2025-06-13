@@ -31,12 +31,11 @@ const vuetify = createVuetify({
         defaultTheme: "claseAcademyTheme",
         themes: {
             claseAcademyTheme: {
-                dark: true,
+                dark: false,
                 colors: {
-                    background: '#0E100F',
-                    surface: '#171717',
-                    primary: '#1D71DC',
-                    secondary: '#6A5A47'
+                    background: '#fbf9f9',
+                    surface: '#4D4D4D',
+                    primary: '#D31E1E'
                     
                 }
             }
